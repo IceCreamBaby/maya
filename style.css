@@ -5,16 +5,17 @@
     padding: 0;
 }
 
+/* KORRIGIERTE VERSION (erlaubt Scrollen auf dem Handy) */
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; wurde entfernt, damit lange Inhalte auf dem Handy oben starten */
     min-height: 100vh;
     background: linear-gradient(-45deg, #f8b195, #f67280, #c06c84, #6c5b7b);
     background-size: 400% 400%;
     animation: gradient-animation 15s ease infinite;
-    overflow: hidden; /* Verhindert Scrollbalken durch das Konfetti */
+    /* overflow: hidden; wurde entfernt, um Scrollen auf allen Geräten zu ermöglichen */
     padding: 20px;
 }
 
